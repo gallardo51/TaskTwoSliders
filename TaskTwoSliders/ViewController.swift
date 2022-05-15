@@ -36,21 +36,21 @@ class ViewController: UIViewController {
         mainViewLabel.layer.cornerRadius = 10
         
         // Red
-        redSliderLabel.value = 1
+        redSliderLabel.value = 0.15
         redSliderLabel.minimumValue = 0
         redSliderLabel.maximumValue = 1
         redCountLabel.text = String(redSliderLabel.value)
         
         
         // Green
-        greenSliderLabel.value = 1
+        greenSliderLabel.value = 0.35
         greenSliderLabel.minimumValue = 0
         greenSliderLabel.maximumValue = 1
         greenCountLabel.text = String(greenSliderLabel.value)
         
         
         // Blue
-        blueSliderLabel.value = 1
+        blueSliderLabel.value = 0.55
         blueSliderLabel.minimumValue = 0
         blueSliderLabel.maximumValue = 1
         blueCountLabel.text = String(blueSliderLabel.value)
