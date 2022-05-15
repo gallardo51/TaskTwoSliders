@@ -32,7 +32,7 @@
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="YxY-Fx-tuB"/>
+                                            <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="YxY-Fx-tuB"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l8I-pO-Fwd">
@@ -41,7 +41,7 @@
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kJh-DW-5gO"/>
+                                            <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="zrU-tH-is1"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-k1-Ly8">
@@ -50,7 +50,7 @@
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Gvh-S5-xG5"/>
+                                            <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="2RQ-Kt-2FF"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -58,16 +58,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="bFQ-CU-Prd">
                                 <rect key="frame" x="90" y="325" width="28" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SU-CD-gjd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SU-CD-gjd">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siU-vL-Jnf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siU-vL-Jnf">
                                         <rect key="frame" x="0.0" y="58" width="28" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="0.0">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsx-yE-SIT">
@@ -131,7 +138,7 @@
                         <outlet property="greenCountLabel" destination="siU-vL-Jnf" id="qx8-EQ-YX7"/>
                         <outlet property="greenSliderLabel" destination="l8I-pO-Fwd" id="xya-oc-vEy"/>
                         <outlet property="greenViewLabel" destination="Uq4-1n-5he" id="wOb-CY-iwn"/>
-                        <outlet property="mainViewLabel" destination="iOg-So-0sp" id="Wcm-v8-bZ6"/>
+                        <outlet property="mainViewLabel" destination="iOg-So-0sp" id="CHw-KT-xN9"/>
                         <outlet property="redCountLabel" destination="5SU-CD-gjd" id="BDQ-Me-cii"/>
                         <outlet property="redSliderLabel" destination="Z1Q-aQ-63m" id="UF5-8y-Wje"/>
                         <outlet property="redViewLabel" destination="Yv7-Qv-uBS" id="HSH-XS-MVB"/>
@@ -139,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="83"/>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
         </scene>
     </scenes>
     <resources>

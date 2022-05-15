@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mainViewLabel: UIView!
+
     
     @IBOutlet weak var redViewLabel: UILabel!
     @IBOutlet weak var redCountLabel: UILabel!
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         redSliderLabel.maximumValue = 1
         redCountLabel.text = String(redSliderLabel.value)
         
+        
         // Green
         greenSliderLabel.value = 1
         greenSliderLabel.minimumValue = 0
@@ -55,15 +57,19 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func redSliderAction() {
+    @IBAction func changeSliderAction() {
         redCountLabel.text = String(redSliderLabel.value)
         let redSliderValue = CGFloat(redSliderLabel.value)
-        mainViewLabel.backgroundColor = mainViewLabel.backgroundColor?.withAlphaComponent(redSliderValue)
+        
+        greenCountLabel.text = String(greenSliderLabel.value)
+        let greenSliderValue = CGFloat(greenSliderLabel.value)
+        
+        blueCountLabel.text = String(blueSliderLabel.value)
+        let blueSliderValue = CGFloat(blueSliderLabel.value)
+        
+        mainViewLabel.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: 1)
     }
-    @IBAction func greenSliderAction() {
-    }
-    @IBAction func blueSliderAction() {
-    }
+    
     
 }
 
