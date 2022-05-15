@@ -26,7 +26,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="e6u-ey-cDC">
                                 <rect key="frame" x="130" y="321.5" width="268" height="146"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Q-aQ-63m">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Q-aQ-63m">
                                         <rect key="frame" x="-2" y="0.0" width="272" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
@@ -35,7 +35,7 @@
                                             <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="YxY-Fx-tuB"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l8I-pO-Fwd">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.34999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l8I-pO-Fwd">
                                         <rect key="frame" x="-2" y="58" width="272" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
@@ -44,7 +44,7 @@
                                             <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="zrU-tH-is1"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-k1-Ly8">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.55000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-k1-Ly8">
                                         <rect key="frame" x="-2" y="116" width="272" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
@@ -64,17 +64,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siU-vL-Jnf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siU-vL-Jnf">
                                         <rect key="frame" x="0.0" y="58" width="28" height="24"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="0.0">
-                                                <attributes>
-                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsx-yE-SIT">

@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         redCountLabel.text = String(redSliderLabel.value)
         
         
+        
         // Green
         greenSliderLabel.value = 0.35
         greenSliderLabel.minimumValue = 0
@@ -58,13 +59,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeSliderAction() {
-        redCountLabel.text = String(redSliderLabel.value)
+        redCountLabel.text = String(format: "%.2f", redSliderLabel.value)
         let redSliderValue = CGFloat(redSliderLabel.value)
         
-        greenCountLabel.text = String(greenSliderLabel.value)
+        greenCountLabel.text = String(format: "%.2f", greenSliderLabel.value)
         let greenSliderValue = CGFloat(greenSliderLabel.value)
         
-        blueCountLabel.text = String(blueSliderLabel.value)
+        blueCountLabel.text = String(format: "%.2f", blueSliderLabel.value)
         let blueSliderValue = CGFloat(blueSliderLabel.value)
         
         mainViewLabel.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: 1)
