@@ -53,15 +53,14 @@ class ViewController: UIViewController {
         blueSliderLabel.maximumValue = 1
         blueCountLabel.text = String(blueSliderLabel.value)
         
-        // Red Slider Label
-        
-        // Green Slider Label
-        
-        // Blue Slider Label
-        
-        
     }
 
-
+    @IBAction func redSliderAction() {
+    }
+    @IBAction func greenSliderAction() {
+    }
+    @IBAction func blueSliderAction() {
+    }
+    
 }
 
