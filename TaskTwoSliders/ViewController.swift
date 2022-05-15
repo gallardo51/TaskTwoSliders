@@ -56,6 +56,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func redSliderAction() {
+        redCountLabel.text = String(redSliderLabel.value)
+        let redSliderValue = CGFloat(redSliderLabel.value)
+        mainViewLabel.backgroundColor = mainViewLabel.backgroundColor?.withAlphaComponent(redSliderValue)
     }
     @IBAction func greenSliderAction() {
     }
