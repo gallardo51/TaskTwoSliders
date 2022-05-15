@@ -41,6 +41,11 @@ class ViewController: UIViewController {
         redCountLabel.text = String(redSliderLabel.value)
         
         // Green
+        greenSliderLabel.value = 1
+        greenSliderLabel.minimumValue = 0
+        greenSliderLabel.maximumValue = 1
+        greenCountLabel.text = String(greenSliderLabel.value)
+        
         
         // Blue View Label
         
