@@ -53,8 +53,7 @@ class ViewController: UIViewController {
         // Blue
         blueSliderLabel.value = 0.55
         blueSliderLabel.minimumValue = 0
-        blueSliderLabel.maximumValue = 0
-        
+        blueSliderLabel.maximumValue = 1
         blueCountLabel.text = String(blueSliderLabel.value)
         
     }
