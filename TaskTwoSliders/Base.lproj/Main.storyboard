@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGv-1d-6Vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-740" y="88"/>
+            <point key="canvasLocation" x="-744" y="92"/>
         </scene>
         <!--Color View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -62,10 +62,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="e6u-ey-cDC">
-                                <rect key="frame" x="135" y="227.5" width="169" height="146"/>
+                                <rect key="frame" x="120" y="227.5" width="125" height="146"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Q-aQ-63m">
-                                        <rect key="frame" x="-2" y="0.0" width="173" height="31"/>
+                                        <rect key="frame" x="-2" y="0.0" width="129" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,7 +74,7 @@
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.34999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l8I-pO-Fwd">
-                                        <rect key="frame" x="-2" y="58" width="173" height="31"/>
+                                        <rect key="frame" x="-2" y="58" width="129" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,7 +83,7 @@
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.55000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-k1-Ly8">
-                                        <rect key="frame" x="-2" y="116" width="173" height="31"/>
+                                        <rect key="frame" x="-2" y="116" width="129" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,8 +167,8 @@
                             <constraint firstItem="bFQ-CU-Prd" firstAttribute="leading" secondItem="z6d-LX-92j" secondAttribute="trailing" constant="7.5" id="PT7-zo-Gtr"/>
                             <constraint firstItem="P80-e2-fEG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XX0-f2-BfJ"/>
                             <constraint firstItem="bFQ-CU-Prd" firstAttribute="top" secondItem="iOg-So-0sp" secondAttribute="bottom" constant="61.5" id="csf-Lu-wWe"/>
-                            <constraint firstItem="e6u-ey-cDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="fLT-Vk-FV6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e6u-ey-cDC" secondAttribute="trailing" constant="16" id="kW6-fF-Yic"/>
+                            <constraint firstItem="e6u-ey-cDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="fLT-Vk-FV6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e6u-ey-cDC" secondAttribute="trailing" constant="75" id="kW6-fF-Yic"/>
                             <constraint firstItem="iOg-So-0sp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kjT-Lm-uPX"/>
                             <constraint firstItem="z6d-LX-92j" firstAttribute="top" secondItem="iOg-So-0sp" secondAttribute="bottom" constant="61.5" id="qGa-na-IOP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iOg-So-0sp" secondAttribute="trailing" constant="16" id="yvb-A3-T79"/>
@@ -189,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17.39130434782609" y="81.696428571428569"/>
+            <point key="canvasLocation" x="122" y="92"/>
         </scene>
     </scenes>
     <resources>
