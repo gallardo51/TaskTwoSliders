@@ -8,6 +8,8 @@
 import UIKit
 
 class ColorViewController: UIViewController {
+    
+    //MARK: - IBOutlets
 
     @IBOutlet weak var mainViewLabel: UIView!
 
@@ -26,8 +28,13 @@ class ColorViewController: UIViewController {
     @IBOutlet weak var greenSliderLabel: UISlider!
     @IBOutlet weak var blueSliderLabel: UISlider!
     
+    @IBOutlet weak var redTextField: UITextField!
+    @IBOutlet weak var greenTextField: UITextField!
+    @IBOutlet weak var blueTextField: UITextField!
     
-    
+    //MARK: - Public Properties
+    var delegate: ColorViewControllerDelegate!
+    var viewColor: UIColor!
     
     override func viewDidLoad() {
         super.viewDidLoad()

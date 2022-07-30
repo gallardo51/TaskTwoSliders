@@ -202,13 +202,16 @@
                     <connections>
                         <outlet property="blueCountLabel" destination="xsx-yE-SIT" id="Gj8-iE-qtZ"/>
                         <outlet property="blueSliderLabel" destination="yVG-k1-Ly8" id="12Z-t0-2Pg"/>
+                        <outlet property="blueTextField" destination="5df-oV-WVf" id="32B-Lw-Fyz"/>
                         <outlet property="blueViewLabel" destination="xYr-yM-k93" id="GiL-tm-RW6"/>
                         <outlet property="greenCountLabel" destination="siU-vL-Jnf" id="qx8-EQ-YX7"/>
                         <outlet property="greenSliderLabel" destination="l8I-pO-Fwd" id="xya-oc-vEy"/>
+                        <outlet property="greenTextField" destination="6Kz-Wu-IAG" id="soe-wK-PKO"/>
                         <outlet property="greenViewLabel" destination="Uq4-1n-5he" id="wOb-CY-iwn"/>
                         <outlet property="mainViewLabel" destination="iOg-So-0sp" id="CHw-KT-xN9"/>
                         <outlet property="redCountLabel" destination="5SU-CD-gjd" id="BDQ-Me-cii"/>
                         <outlet property="redSliderLabel" destination="Z1Q-aQ-63m" id="UF5-8y-Wje"/>
+                        <outlet property="redTextField" destination="Mp2-bC-HtZ" id="icI-tM-0j8"/>
                         <outlet property="redViewLabel" destination="Yv7-Qv-uBS" id="HSH-XS-MVB"/>
                     </connections>
                 </viewController>

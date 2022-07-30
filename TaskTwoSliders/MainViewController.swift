@@ -14,7 +14,9 @@ protocol ColorViewControllerDelegate {
 class MainViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let _ = segue.destination as? ColorViewController
+        let colorVC = segue.destination as? ColorViewController
+        colorVC?.delegate = self
+        colorVC?.viewColor = view.backgroundColor
     }
 
 }
