@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1A1296289541BB00C09F86 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1A1295289541BB00C09F86 /* MainViewController.swift */; };
 		BA6D64E12825A4D200FD281C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6D64E02825A4D200FD281C /* AppDelegate.swift */; };
 		BA6D64E32825A4D200FD281C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6D64E22825A4D200FD281C /* SceneDelegate.swift */; };
-		BA6D64E52825A4D200FD281C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6D64E42825A4D200FD281C /* ViewController.swift */; };
+		BA6D64E52825A4D200FD281C /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6D64E42825A4D200FD281C /* ColorViewController.swift */; };
 		BA6D64E82825A4D200FD281C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6D64E62825A4D200FD281C /* Main.storyboard */; };
 		BA6D64EA2825A4D300FD281C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6D64E92825A4D300FD281C /* Assets.xcassets */; };
 		BA6D64ED2825A4D300FD281C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6D64EB2825A4D300FD281C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1A1295289541BB00C09F86 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BA6D64DD2825A4D200FD281C /* TaskTwoSliders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTwoSliders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6D64E02825A4D200FD281C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6D64E22825A4D200FD281C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA6D64E42825A4D200FD281C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA6D64E42825A4D200FD281C /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		BA6D64E72825A4D200FD281C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA6D64E92825A4D300FD281C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6D64EC2825A4D300FD281C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,10 +60,11 @@
 			children = (
 				BA6D64E02825A4D200FD281C /* AppDelegate.swift */,
 				BA6D64E22825A4D200FD281C /* SceneDelegate.swift */,
-				BA6D64E42825A4D200FD281C /* ViewController.swift */,
+				BA6D64E42825A4D200FD281C /* ColorViewController.swift */,
+				BA1A1295289541BB00C09F86 /* MainViewController.swift */,
 				BA6D64E62825A4D200FD281C /* Main.storyboard */,
-				BA6D64E92825A4D300FD281C /* Assets.xcassets */,
 				BA6D64EB2825A4D300FD281C /* LaunchScreen.storyboard */,
+				BA6D64E92825A4D300FD281C /* Assets.xcassets */,
 				BA6D64EE2825A4D300FD281C /* Info.plist */,
 			);
 			path = TaskTwoSliders;
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6D64E52825A4D200FD281C /* ViewController.swift in Sources */,
+				BA6D64E52825A4D200FD281C /* ColorViewController.swift in Sources */,
 				BA6D64E12825A4D200FD281C /* AppDelegate.swift in Sources */,
 				BA6D64E32825A4D200FD281C /* SceneDelegate.swift in Sources */,
+				BA1A1296289541BB00C09F86 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,7 @@
 				DEVELOPMENT_TEAM = LBC2FW8GZY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskTwoSliders/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskTwoSliders2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +326,7 @@
 				DEVELOPMENT_TEAM = LBC2FW8GZY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskTwoSliders/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskTwoSliders2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

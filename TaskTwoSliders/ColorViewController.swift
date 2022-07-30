@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ColorViewController: UIViewController {
 
     @IBOutlet weak var mainViewLabel: UIView!
 
@@ -72,5 +72,7 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+    }
 }
 
