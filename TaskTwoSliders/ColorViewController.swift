@@ -45,7 +45,7 @@ class ColorViewController: UIViewController {
         mainViewLabel.backgroundColor = viewColor
         
         // Red
-        redSlider.value = 0.15
+        redSlider.value = 0.45
         redSlider.minimumValue = 0
         redSlider.maximumValue = 1
         redCountLabel.text = String(redSlider.value)
@@ -62,10 +62,12 @@ class ColorViewController: UIViewController {
         
         
         // Blue
-        blueSlider.value = 0.55
+        blueSlider.value = 0.85
         blueSlider.minimumValue = 0
         blueSlider.maximumValue = 1
         blueCountLabel.text = String(blueSlider.value)
+        
+        changeSliderAction()
     
     }
 
