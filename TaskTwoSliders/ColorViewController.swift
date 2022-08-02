@@ -42,11 +42,14 @@ class ColorViewController: UIViewController {
         // View Label
         mainViewLabel.layer.cornerRadius = 10
         
+        mainViewLabel.backgroundColor = viewColor
+        
         // Red
         redSliderLabel.value = 0.15
         redSliderLabel.minimumValue = 0
         redSliderLabel.maximumValue = 1
         redCountLabel.text = String(redSliderLabel.value)
+        redSliderLabel.tintColor = .red
         
         
         
@@ -55,6 +58,7 @@ class ColorViewController: UIViewController {
         greenSliderLabel.minimumValue = 0
         greenSliderLabel.maximumValue = 1
         greenCountLabel.text = String(greenSliderLabel.value)
+        greenSliderLabel.tintColor = .green
         
         
         // Blue
@@ -62,7 +66,7 @@ class ColorViewController: UIViewController {
         blueSliderLabel.minimumValue = 0
         blueSliderLabel.maximumValue = 1
         blueCountLabel.text = String(blueSliderLabel.value)
-        
+    
     }
 
     @IBAction func changeSliderAction() {
@@ -75,11 +79,21 @@ class ColorViewController: UIViewController {
         blueCountLabel.text = String(format: "%.2f", blueSliderLabel.value)
         let blueSliderValue = CGFloat(blueSliderLabel.value)
         
+        
         mainViewLabel.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: 1)
     }
     
+    private func setSliders() {
+        let ciColor = CIColor(color: viewColor)
+        
+        redSliderLabel.value = Float(ciColor.red)
+        greenSliderLabel.value = Float(ciColor.green)
+        blueSliderLabel.value = Float(ciColor.blue)
+    }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
+        delegate.setColor(mainViewLabel.backgroundColor ?? .white)
+        dismiss(animated: true)
     }
 }
 
