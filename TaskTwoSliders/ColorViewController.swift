@@ -121,7 +121,7 @@ extension ColorViewController {
     
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) {_ in}
         alert.addAction(okAction)
         present(alert, animated: true)
     }
@@ -137,7 +137,13 @@ extension ColorViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        guard let text = textField.text else { return }
+        guard let text = textField.text, !text.isEmpty else {
+            showAlert(
+                title: "TextField is empty🤷‍♂️",
+                message: "Please enter correct value"
+            )
+            return
+        }
         
         if let currentValue = Float(text) {
             switch textField {
@@ -156,7 +162,7 @@ extension ColorViewController: UITextFieldDelegate {
             return
         }
         
-        showAlert(title: "Wrong format!", message: "Please enter correct value")
+        showAlert(title: "Wrong format🤔", message: "Please enter correct value")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
