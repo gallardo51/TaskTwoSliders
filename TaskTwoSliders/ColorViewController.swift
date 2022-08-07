@@ -158,4 +158,15 @@ extension ColorViewController: UITextFieldDelegate {
         
         showAlert(title: "Wrong format!", message: "Please enter correct value")
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == redTextField {
+            greenTextField.becomeFirstResponder()
+        } else if textField == greenTextField {
+            blueTextField.becomeFirstResponder()
+        } else {
+            didTapDone()
+        }
+        return true
+    }
 }
