@@ -47,10 +47,10 @@ class ColorViewController: UIViewController {
         
         mainViewLabel.backgroundColor = viewColor
         
-        setNewColor()
+        setSliders()
     }
 
-    @IBAction func changeSliderAction() {
+    @IBAction func changeSliderAction(_ sender: UISlider) {
         redCountLabel.text = String(format: "%.2f", redSlider.value)
         greenCountLabel.text = String(format: "%.2f", greenSlider.value)
         blueCountLabel.text = String(format: "%.2f", blueSlider.value)
@@ -58,8 +58,8 @@ class ColorViewController: UIViewController {
         setNewColor()
     }
      
-    @IBAction func doneButtonPressed(_ sender: UIButton) {
-        delegate?.setColor(mainViewLabel.backgroundColor ?? .white)
+    @IBAction func doneButtonPressed() {
+        delegate?.setNewColor(mainViewLabel.backgroundColor ?? .white)
         dismiss(animated: true)
     }
 }
@@ -72,5 +72,12 @@ extension ColorViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
+    }
+    private func setSliders() {
+        let ciColor = CIColor(color: viewColor)
+        
+        redSlider.value = Float(ciColor.red)
+        greenSlider.value = Float(ciColor.green)
+        blueSlider.value = Float(ciColor.blue)
     }
 }
