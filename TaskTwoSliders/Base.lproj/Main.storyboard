@@ -152,7 +152,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="GcC-nI-A84"/>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCM-5R-CRS"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="W2h-FS-YqO">
