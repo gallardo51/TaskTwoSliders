@@ -48,9 +48,19 @@ class ColorViewController: UIViewController {
         mainViewLabel.backgroundColor = viewColor
         
         setSliders()
+        setValue(for: redCountLabel, greenCountLabel, blueCountLabel)
     }
 
-    @IBAction func changeSliderAction() {
+    @IBAction func changeSliderAction(_ sender: UISlider) {
+        
+        switch sender {
+        case redSlider:
+            setValue(for: redCountLabel)
+        case greenSlider:
+            setValue(for: greenCountLabel)
+        default:
+            setValue(for: blueCountLabel)
+        }
         
         setNewColor()
     }
@@ -70,11 +80,23 @@ extension ColorViewController {
             alpha: 1
         )
     }
+    private func setValue(for labels: UILabel...) {
+        labels.forEach { label in
+            switch label {
+            case redCountLabel: label.text = string(from: redSlider)
+            case greenCountLabel: label.text = string(from: greenSlider)
+            default: label.text = string(from: blueSlider)
+            }
+        }
+    }
     private func setSliders() {
         let ciColor = CIColor(color: viewColor)
         
         redSlider.value = Float(ciColor.red)
         greenSlider.value = Float(ciColor.green)
         blueSlider.value = Float(ciColor.blue)
+    }
+    private func string(from slider: UISlider) -> String {
+        String(format: "%.2f", slider.value)
     }
 }
