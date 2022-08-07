@@ -18,7 +18,6 @@ class MainViewController: UIViewController {
         colorVC?.delegate = self
         colorVC?.viewColor = view.backgroundColor
     }
-
 }
 
 //MARK: - ColorDelegate
