@@ -13,15 +13,8 @@ class ColorViewController: UIViewController {
 
     @IBOutlet weak var mainViewLabel: UIView!
 
-    
-    @IBOutlet weak var redViewLabel: UILabel!
     @IBOutlet weak var redCountLabel: UILabel!
-    
-    
-    @IBOutlet weak var greenViewLabel: UILabel!
     @IBOutlet weak var greenCountLabel: UILabel!
-    
-    @IBOutlet weak var blueViewLabel: UILabel!
     @IBOutlet weak var blueCountLabel: UILabel!
     
     @IBOutlet weak var redSlider: UISlider!
@@ -51,7 +44,8 @@ class ColorViewController: UIViewController {
         setValue(for: redCountLabel, greenCountLabel, blueCountLabel)
         setValue(for: redTextField, greenTextField, blueTextField)
     }
-
+    
+    // MARK: - IB Actions
     @IBAction func changeSliderAction(_ sender: UISlider) {
         
         switch sender {
@@ -75,6 +69,7 @@ class ColorViewController: UIViewController {
     }
 }
 
+// MARK: - Private Methods
 extension ColorViewController {
     private func setNewColor() {
         mainViewLabel.backgroundColor = UIColor(
@@ -84,6 +79,7 @@ extension ColorViewController {
             alpha: 1
         )
     }
+    
     private func setValue(for labels: UILabel...) {
         labels.forEach { label in
             switch label {
@@ -103,6 +99,7 @@ extension ColorViewController {
             }
         }
     }
+    
     private func setSliders() {
         let ciColor = CIColor(color: viewColor)
         
@@ -110,6 +107,7 @@ extension ColorViewController {
         greenSlider.value = Float(ciColor.green)
         blueSlider.value = Float(ciColor.blue)
     }
+    
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
