@@ -70,7 +70,7 @@
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="YxY-Fx-tuB"/>
+                                            <action selector="changeSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="tfq-9E-osi"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.34999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l8I-pO-Fwd">
@@ -79,7 +79,7 @@
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="zrU-tH-is1"/>
+                                            <action selector="changeSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mTI-aQ-QuP"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.55000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-k1-Ly8">
@@ -88,7 +88,7 @@
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="changeSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="2RQ-Kt-2FF"/>
+                                            <action selector="changeSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ebf-yO-whR"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -152,7 +152,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="doneButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pi3-EN-rEm"/>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="GcC-nI-A84"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="W2h-FS-YqO">
