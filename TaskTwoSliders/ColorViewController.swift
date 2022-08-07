@@ -50,10 +50,7 @@ class ColorViewController: UIViewController {
         setSliders()
     }
 
-    @IBAction func changeSliderAction(_ sender: UISlider) {
-        redCountLabel.text = String(format: "%.2f", redSlider.value)
-        greenCountLabel.text = String(format: "%.2f", greenSlider.value)
-        blueCountLabel.text = String(format: "%.2f", blueSlider.value)
+    @IBAction func changeSliderAction() {
         
         setNewColor()
     }

@@ -27,7 +27,7 @@
         <!--Main View Controller-->
         <scene sceneID="wc8-Wb-aXF">
             <objects>
-                <viewController id="UgM-46-J94" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="UgM-46-J94" customClass="MainViewController" customModule="TaskTwoSliders" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KV6-ls-OoC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
