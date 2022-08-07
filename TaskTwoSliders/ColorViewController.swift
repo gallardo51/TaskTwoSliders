@@ -49,6 +49,7 @@ class ColorViewController: UIViewController {
         
         setSliders()
         setValue(for: redCountLabel, greenCountLabel, blueCountLabel)
+        setValue(for: redTextField, greenTextField, blueTextField)
     }
 
     @IBAction func changeSliderAction(_ sender: UISlider) {
@@ -56,10 +57,13 @@ class ColorViewController: UIViewController {
         switch sender {
         case redSlider:
             setValue(for: redCountLabel)
+            setValue(for: redTextField)
         case greenSlider:
             setValue(for: greenCountLabel)
+            setValue(for: greenTextField)
         default:
             setValue(for: blueCountLabel)
+            setValue(for: blueTextField)
         }
         
         setNewColor()
@@ -86,6 +90,16 @@ extension ColorViewController {
             case redCountLabel: label.text = string(from: redSlider)
             case greenCountLabel: label.text = string(from: greenSlider)
             default: label.text = string(from: blueSlider)
+            }
+        }
+    }
+    
+    private func setValue(for textFields: UITextField...) {
+        textFields.forEach { textField in
+            switch textField {
+            case redTextField: textField.text = string(from: redSlider)
+            case greenTextField: textField.text = string(from: greenSlider)
+            default: textField.text = string(from: blueSlider)
             }
         }
     }
